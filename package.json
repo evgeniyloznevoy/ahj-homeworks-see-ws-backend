@@ -1,0 +1,25 @@
+{
+    "name": "http-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "prestart": "npm install",
+        "start": "forever server.js",
+        "watch": "forever -w server.js",
+        "stop": "forever stopall",
+        "test-start": "forever server-test.js"
+    },
+    "author": "evgeniy.loznevoy",
+    "license": "ISC",
+    "dependencies": {
+        "forever": "^4.0.3",
+        "koa": "^2.13.4",
+        "koa-body": "^5.0.0",
+        "koa-router": "^12.0.0",
+        "koa-static": "^5.0.0",
+        "koa2-cors": "^2.0.6",
+        "uuid": "^9.0.0",
+        "ws": "^8.9.0"
+    }
+}
